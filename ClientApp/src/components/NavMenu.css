@@ -1,0 +1,42 @@
+﻿/*a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}*/
+
+#link1, #link2 {
+  font-size: 20px;
+  color: black
+}
+
+#link1:hover, #link2:hover {
+  border-radius: 10px;
+  background-color: lightsteelblue
+}
+
+.color-nav {
+  background-color:lavender
+}
+
+h4 {
+  color: teal
+}
+
+.navLink {
+  margin-right: 2rem;
+}
+
+.black_toast {
+  background-color: black;
+  color:white
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
