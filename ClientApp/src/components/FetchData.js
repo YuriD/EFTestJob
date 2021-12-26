@@ -1,56 +1,39 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
+import { AddUser } from './AddUser';
+import BootstrapTable from 'react-bootstrap-table-next';
+import { UserContext } from './UserContext';
 
-export class FetchData extends Component {
-  static displayName = FetchData.name;
-
-  constructor(props) {
-    super(props);
-    this.state = { users: [], loading: true };
+export const FetchData = (props) => {
+  let u = useContext(UserContext);  props.u && (u = {users: props.u})
+  const dateFormatter = (cell, _row) => {
+    return new Date(cell).toLocaleDateString()
   }
+  const columns = [
+    { dataField: 'userId', text: 'User ID', style: { width: '10%' }, headerStyle: { width: '9%' } },
+    { dataField: 'dReg', text: 'Date registration', style: { width: '22%' }, headerStyle: { width: '22%' }, formatter: dateFormatter, },
+    { dataField: 'dLastAct', text: 'Date last activity', style: { width: '22%' }, headerStyle: { width: '22%' }, formatter: dateFormatter, }
+  ]
 
-  componentDidMount() {
-    this.populateUserData();
-  }
+  try {
+    const el = document.getElementById('usr')
+    el.remove()
+  } catch { }
 
-  static renderUsersTable(users) {
-    return (
-      <table className='table table-striped' aria-labelledby="tabelLabel">
-        <thead>
-          <tr>
-            <th>User ID</th>
-            <th>Date registration</th>
-            <th>Date last activity</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map(user =>
-            <tr key={user.userId}>
-              <td width='10%'>{user.userId}</td>
-              <td width='20%'>{new Date(user.dReg).toLocaleDateString()}</td>
-              <td width='20%'>{new Date(user.dLastAct).toLocaleDateString()}</td>
-            </tr>
-          )}
-        </tbody>
-      </table>
-    );
-  }
-
-  render() {
-    let contents = this.state.loading
-      ? <p><em>Loading...</em></p>
-      : FetchData.renderUsersTable(this.state.users);
-
-    return (
-      <div>
-        <h4 id="tabelLabel" >Users</h4>
-        {contents}
-      </div>
-    );
-  }
-
-  async populateUserData() {
-    const response = await fetch('api/users', { method: 'GET' });
-    const data = await response.json();
-    this.setState({ users: data, loading: false });
- }
+  return <>
+    <AddUser />
+    {u.users.length > 0 &&
+      <BootstrapTable
+        bootstrap4
+        id='usr'
+        keyField='userId'
+        data={u.users}
+        columns={columns}
+        //cellEdit={cellEditFactory({ mode: 'click', autoSelectText: true, afterSaveCell: setCell })}
+        headerClasses='tab_head'
+        striped={true}
+        hover={true}
+        bordered={false}
+      />}
+  </>
 }
+

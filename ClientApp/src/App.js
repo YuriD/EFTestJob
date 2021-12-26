@@ -2,18 +2,24 @@ import React from 'react';
 import { Route } from 'react-router';
 import Container from 'react-bootstrap/Container'
 import { NavMenu } from './components/NavMenu';
-import { AddUser } from './components/AddUser';
 import { FetchData } from './components/FetchData';
-import { Counter } from './components/Counter';
+import { UsersPlot } from './components/Calculate';
+import { useUsers } from './hooks/users_hook';
+import { UserContext } from './components/UserContext';
 
 function App() {
+  const { users } = useUsers()
+
   return <>
     <NavMenu />
-    <Container>
-      <Route exact path='/' component={AddUser} />
-      <Route path='/fetch-data' component={FetchData} />
-      <Route path='/counter' component={Counter} />
-    </Container>
+      <UserContext.Provider value={{ users }}>
+        <Container>
+          <Route exact path='/' component={FetchData} />
+        </Container>
+        <Container fluid>
+          <Route path='/calc' component={UsersPlot} />
+        </Container>  
+      </UserContext.Provider>
   </>
 }
 export default App

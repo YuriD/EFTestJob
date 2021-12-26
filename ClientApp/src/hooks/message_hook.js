@@ -1,20 +1,21 @@
-import React, { useCallback } from 'react';
-import ToastContainer from 'react-bootstrap/ToastContainer'
-import Toast from 'react-bootstrap/Toast'
+import React, { useCallback } from "react"
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css'
 
 export const useMessage = () => {
-  return useCallback(text => {
-    if(text) {
-      return <>
-        <ToastContainer position='top-end'>
-          <Toast bg='Info' delay={5000} autohide>
-            <Toast.Header>
-              <strong className="me-auto">Warning</strong>
-            </Toast.Header>
-            <Toast.Body>{text}</Toast.Body>
-          </Toast>
-        </ToastContainer>
-      </>
-    }
+  const message = useCallback((err, text) => {
+    toast.configure({
+      autoClose: 3000,
+      position: 'top-center',
+      bodyClassName: "black_toast",
+    })
+    if(err && text)
+      toast.warn(`${text}`)
+    else if (text)
+      toast.success(`${text}`)
+    return (
+      <ToastContainer />
+    )
   }, [])
+  return { message }
 }

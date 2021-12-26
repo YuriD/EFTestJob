@@ -13,7 +13,7 @@ export const useHttp = () => {
       const response = await fetch(url, { method, headers, body })
       const data = await response.json()
       if (!response.ok) {
-        throw new Error(data.message || "Something doesn't look right") 
+        throw new Error(data.message || "Validation error occurred")
       }
       setLoading(false); return data      
     } catch (e) {
