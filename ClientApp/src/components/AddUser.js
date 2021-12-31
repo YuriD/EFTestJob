@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import { useHttp } from '../hooks/http_hook'
 import { useMessage } from '../hooks/message_hook'
-import { FetchData } from './FetchData'
+import { UsersList } from './UsersList'
 
 export const AddUser = () => {
   const { loading, request, error, clearError } = useHttp()
@@ -42,7 +42,11 @@ export const AddUser = () => {
   }
 
   if (users.length > 0) {
-    return <FetchData u={users} />
+    try {
+      const el = document.getElementById('usr')
+      el.remove()
+    } catch { }
+    return <UsersList u={users} />
 	}
 
   return <>

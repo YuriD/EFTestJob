@@ -11,7 +11,6 @@ C:\Projects\EFTestJob\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Projects\EFTestJob\obj\Debug\net5.0\EFTestJob.csproj.AssemblyReference.cache
 C:\Projects\EFTestJob\obj\Debug\net5.0\EFTestJob.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\EFTestJob\obj\Debug\net5.0\EFTestJob.AssemblyInfoInputs.cache
 C:\Projects\EFTestJob\obj\Debug\net5.0\EFTestJob.AssemblyInfo.cs
@@ -117,3 +116,4 @@ C:\Projects\EFTestJob\bin\Debug\net5.0\Microsoft.AspNetCore.SpaServices.Extensio
 C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\package-lock.json
 C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\package.json
 C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\public\manifest.json
+C:\Projects\EFTestJob\obj\Debug\net5.0\EFTestJob.csproj.AssemblyReference.cache

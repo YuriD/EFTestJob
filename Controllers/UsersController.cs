@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -48,6 +49,12 @@ namespace EFTestJob.Controllers
                 return BadRequest();
             }
 
+            if (DateTime.Compare(user.DReg, user.DLastAct) > 0)
+            {
+              ModelState.AddModelError("dlastact", "Date last activity must be greater");
+            }
+            if(!ModelState.IsValid) return BadRequest(ModelState);
+
             db.Entry(user).State = EntityState.Modified;
 
             try
@@ -66,7 +73,7 @@ namespace EFTestJob.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(user); //NoContent();
         }
 
         // POST: api/Users
@@ -74,10 +81,19 @@ namespace EFTestJob.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
+          if (UserExists(user.UserId))
+          {
+            ModelState.AddModelError("userid", "User already exist");
+          }
+          if (DateTime.Compare(user.DReg, user.DLastAct) > 0)
+          {
+            ModelState.AddModelError("dlastact", "Date last activity must be greater");
+          }
+          if(!ModelState.IsValid) return BadRequest(ModelState);
           db.Users.Add(user);
           await db.SaveChangesAsync();
           return CreatedAtAction(nameof(GetUser), new { id = user.UserId }, user);
-        }
+    }
 
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
