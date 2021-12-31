@@ -25,7 +25,7 @@ export const UsersList = (props) => {
     { dataField: 'dLastAct', text: 'Date last activity', editor: { type: Type.DATE, defaultValue: new Date() }, style: { width: '22%' }, headerStyle: { width: '22%' }, formatter: dateFormatter, }
   ]
 
-  const checkDate = (oldValue, newValue, row, _col) => {
+  const checkDate = (oldValue, newValue, _row, _col) => {
     if (new Date(row.dReg) > new Date(row.dLastAct)) 
       console.log('Hernya!')
     }
