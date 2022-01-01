@@ -49,12 +49,6 @@ namespace EFTestJob.Controllers
                 return BadRequest();
             }
 
-            if (DateTime.Compare(user.DReg, user.DLastAct) > 0)
-            {
-              ModelState.AddModelError("dlastact", "Date last activity must be greater");
-            }
-            if(!ModelState.IsValid) return BadRequest(ModelState);
-
             db.Entry(user).State = EntityState.Modified;
 
             try
@@ -87,7 +81,7 @@ namespace EFTestJob.Controllers
           }
           if (DateTime.Compare(user.DReg, user.DLastAct) > 0)
           {
-            ModelState.AddModelError("dlastact", "Date last activity must be greater");
+            ModelState.AddModelError("dlastact", "Date last activity should be greater");
           }
           if(!ModelState.IsValid) return BadRequest(ModelState);
           db.Users.Add(user);

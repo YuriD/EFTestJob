@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import Form from 'react-bootstrap/Form'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -6,28 +6,18 @@ import Button from 'react-bootstrap/Button'
 import { useHttp } from '../hooks/http_hook'
 import { useMessage } from '../hooks/message_hook'
 import { UsersList } from './UsersList'
+import { UserContext } from './UserContext'
 
 export const AddUser = () => {
+  const u = useContext(UserContext)
   const { loading, request, error, clearError } = useHttp()
   const [form, setForm] = useState({ userid: '', dreg: '', dlastact: '' })
-  const [preload, setPreload] = useState(false)
-  const [users, setUsers] = useState([])
   const { message } = useMessage()
 
   useEffect(() => {
     message(true, error)
     console.log('Error: ', error); clearError()
   }, [error, message, clearError])
-
-  useEffect(() => {
-    const UpdatedUsers = async () => {
-      if (preload) {
-        const fetched = await request('/api/users', 'GET')
-        setUsers(fetched)
-      }
-    }
-    UpdatedUsers()
-  }, [preload, request]);
 
   const changeHandler = event => {
     setForm({ ...form, [event.target.name]: event.target.value })
@@ -37,17 +27,9 @@ export const AddUser = () => {
     try {
       const data = await request('/api/Users', 'POST', {}, { ...form })   //{ UserID: form.userid, Dreg: form.dreg, DLastAct: form.dlastact })
       message(false, `New user added with ID ${data.userId}`)
-      setPreload(!preload)
-    } catch (e) { }
+      u.getUsers()
+    } catch (e) {}
   }
-
-  if (users.length > 0) {
-    try {
-      const el = document.getElementById('usr')
-      el.remove()
-    } catch { }
-    return <UsersList u={users} />
-	}
 
   return <>
     <br /><h4>New User</h4>
@@ -72,5 +54,6 @@ export const AddUser = () => {
         </Col>
       </Row>
     </Form>
+    {u.users.length > 0 && <UsersList users={u.users}/>}
   </>
 }
