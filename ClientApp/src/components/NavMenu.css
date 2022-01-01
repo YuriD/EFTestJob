@@ -22,7 +22,12 @@ h4 {
   color: teal
 }
 
-.but {
+.but1, .but2 {
+  background: #4A9DFF;
+  border-radius: 10px;
+}
+
+.but2 {
   margin-top: 47px;
 }
 
@@ -34,8 +39,24 @@ h4 {
   background-color: black;
   color:white
 }
+
 .tab_head {
   background-color: lightyellow
+}
+
+#ab {
+  width: 142px;
+  height: 23px;
+  left: 23px;
+  top: 103px;
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #5D6E97;
 }
 
 @media (min-width: 768px) {

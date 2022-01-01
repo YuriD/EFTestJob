@@ -48,7 +48,7 @@ export const AddUser = () => {
           <Form.Control size="lg" type="date" name="dlastact" onChange={changeHandler} />
         </Form.Group>
         <Col xs="auto">
-          <Button variant="primary" type="submit" className="but" size="lg" onClick={adduserHandler} disabled={loading}>
+          <Button variant="primary" type="submit" className="but2" size="lg" onClick={adduserHandler} disabled={loading}>
             Save
           </Button>
         </Col>
