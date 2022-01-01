@@ -17,5 +17,6 @@ export const useMessage = () => {
       <ToastContainer />
     )
   }, [])
+
   return { message }
 }
