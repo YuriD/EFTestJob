@@ -115,4 +115,3 @@ C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\package-lock.json
 C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\package.json
 C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\public\manifest.json
 C:\Projects\EFTestJob\obj\Debug\net5.0\EFTestJob.csproj.AssemblyReference.cache
-C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\build\manifest.json
