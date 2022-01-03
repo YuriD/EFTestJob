@@ -30,10 +30,8 @@ C:\Projects\EFTestJob\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Projects\EFTestJob\bin\Debug\net5.0\MySqlConnector.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Npgsql.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Projects\EFTestJob\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Humanizer.dll
 C:\Projects\EFTestJob\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
@@ -117,3 +115,4 @@ C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\package-lock.json
 C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\package.json
 C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\public\manifest.json
 C:\Projects\EFTestJob\obj\Debug\net5.0\EFTestJob.csproj.AssemblyReference.cache
+C:\Projects\EFTestJob\bin\Debug\net5.0\ClientApp\build\manifest.json

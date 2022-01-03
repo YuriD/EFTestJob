@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/qpFfg+6nXK2el/M4GxsFx1gcngRJo/aHSc0T4VcCcIkVEGJt6mpwifFfjdJSenT4of0kxFCW/+cSljAK1E7Aw==",
+  "dgSpecHash": "SjjOitvidDnYcFqi3+KzzJ1NyLPccIjrBdNNAv3jbuYwpwodx9lykiAQ7y50V91dH2RwYhAd6AsAbsJWNmWg9Q==",
   "success": true,
   "projectFilePath": "C:\\Projects\\EFTestJob\\EFTestJob.csproj",
   "expectedPackageFiles": [
@@ -48,11 +48,9 @@
     "C:\\Users\\Yuri\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\5.0.2\\microsoft.visualstudio.web.codegeneration.templating.5.0.2.nupkg.sha512",
     "C:\\Users\\Yuri\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\5.0.2\\microsoft.visualstudio.web.codegeneration.utils.5.0.2.nupkg.sha512",
     "C:\\Users\\Yuri\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\5.0.2\\microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
-    "C:\\Users\\Yuri\\.nuget\\packages\\mysqlconnector\\1.3.13\\mysqlconnector.1.3.13.nupkg.sha512",
     "C:\\Users\\Yuri\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Yuri\\.nuget\\packages\\npgsql\\5.0.10\\npgsql.5.0.10.nupkg.sha512",
     "C:\\Users\\Yuri\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.10\\npgsql.entityframeworkcore.postgresql.5.0.10.nupkg.sha512",
-    "C:\\Users\\Yuri\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.3\\pomelo.entityframeworkcore.mysql.5.0.3.nupkg.sha512",
     "C:\\Users\\Yuri\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Yuri\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\Yuri\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
