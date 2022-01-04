@@ -18,8 +18,8 @@ export const UsersList = ({users}) => {
   }
   const columns = [
     { dataField: 'userId', text: 'User ID', editable: false, style: { width: '10%' }, headerStyle: { width: '9%' } },
-    { dataField: 'dReg', text: 'Date registration (edit - click on field)', editor: { type: Type.DATE, defaultValue: new Date().toLocaleDateString() }, style: { width: '22%' }, headerStyle: { width: '22%' }, formatter: dateFormatter, },
-    { dataField: 'dLastAct', text: 'Date last activity (edit - click on field)', editor: { type: Type.DATE, defaultValue: new Date().toLocaleDateString() }, style: { width: '22%' }, headerStyle: { width: '22%' }, formatter: dateFormatter, }
+    { dataField: 'dReg', text: 'Date registration (edit - click on field)', editor: { type: Type.DATE, defaultValue: new Date().toString() }, style: { width: '22%' }, headerStyle: { width: '22%' }, formatter: dateFormatter, },
+    { dataField: 'dLastAct', text: 'Date last activity (edit - click on field)', editor: { type: Type.DATE, defaultValue: new Date().toString() }, style: { width: '22%' }, headerStyle: { width: '22%' }, formatter: dateFormatter, }
   ]
 
   const checkDate = (oldValue, newValue, row, col) => {
