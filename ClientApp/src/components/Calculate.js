@@ -26,9 +26,15 @@ export const UsersPlot = () => {
       Rolling Retention 7 day: <span style={{ color: 'Brown' }}>{rollRet}%</span> </p>
     <Plot
       data={[
-        { type: 'bar', x: Object.keys(data), y: Object.keys(data).map(key => data[key]), marker: { color: 'darkseagreen'  }}
+        { type: 'bar', x: Object.keys(data), y: Object.keys(data).map(key => data[key]), marker: { color:'SeaGreen'  }}
       ]}
-      layout={{ title: "Distribution of user lives in days", font: { color: 'blue', size: 14 } }}
+      layout={{
+        title: "Distribution of user lives in days",
+        font: { color: 'blue', size: 14 },
+        xaxis: {
+          title: 'days from registration date to date of last activity', titlefont: { size: 18, color: 'Sienna' }},
+        yaxis: { title: 'number of users', titlefont: { size: 18, color: 'Sienna' }}
+      }}
       style={{ width: '100%', height: 650 }}
     />
   </>;
