@@ -22,6 +22,14 @@ h4 {
   color: teal
 }
 
+.p_calc {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 15pt;
+  font-family: 'verdana';
+  color: blue
+}
+
 .but1, .but2 {
   background: #4A9DFF;
   border-radius: 10px;
