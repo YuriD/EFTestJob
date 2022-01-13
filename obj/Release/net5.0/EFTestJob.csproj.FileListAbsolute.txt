@@ -33,11 +33,9 @@ C:\Projects\EFTestJob\bin\Release\net5.0\Microsoft.VisualStudio.Web.CodeGenerati
 C:\Projects\EFTestJob\bin\Release\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Projects\EFTestJob\bin\Release\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Projects\EFTestJob\bin\Release\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Projects\EFTestJob\bin\Release\net5.0\MySqlConnector.dll
 C:\Projects\EFTestJob\bin\Release\net5.0\Newtonsoft.Json.dll
 C:\Projects\EFTestJob\bin\Release\net5.0\Npgsql.dll
 C:\Projects\EFTestJob\bin\Release\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Projects\EFTestJob\bin\Release\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Projects\EFTestJob\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projects\EFTestJob\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projects\EFTestJob\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -117,3 +115,5 @@ C:\Projects\EFTestJob\obj\Release\net5.0\EFTestJob.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\ref\EFTestJob.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\EFTestJob.pdb
 C:\Projects\EFTestJob\obj\Release\net5.0\EFTestJob.genruntimeconfig.cache
+C:\Projects\EFTestJob\bin\Release\net5.0\MySqlConnector.dll
+C:\Projects\EFTestJob\bin\Release\net5.0\Pomelo.EntityFrameworkCore.MySql.dll

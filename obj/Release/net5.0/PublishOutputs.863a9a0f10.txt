@@ -29,11 +29,9 @@ C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.C
 C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\MySqlConnector.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Npgsql.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projects\EFTestJob\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -4,7 +4,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Projects\EFTestJob\bin\Release\net5.0\publish\</_PublishTargetUrl>
-    <History>True|2021-12-12T08:40:12.7101925Z;</History>
+    <_PublishTargetUrl>C:\Projects\EFTestJob\bin\Release\publish\</_PublishTargetUrl>
+    <History>True|2022-01-04T09:36:14.8835140Z;True|2022-01-04T08:32:34.2367385+07:00;True|2022-01-04T00:07:47.6737719+07:00;True|2022-01-03T23:44:24.6195218+07:00;True|2022-01-03T23:01:03.4237419+07:00;True|2022-01-03T22:56:45.5809941+07:00;True|2022-01-03T22:37:14.7210248+07:00;True|2021-12-12T15:40:12.7101925+07:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="PostgresConnection">
+      <Value>Server=localhost%3bPort=5432%3bDatabase=dbusers%3bUser Id=postgres%3bPassword=postgres</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
 </Project>
